@@ -24,7 +24,7 @@ if(isset($_POST["update"])){
       $GLOBALS["array_data"][$key]["mail"] = $curr_mail;
       $GLOBALS["array_data"][$key]["next_of_kin"] = $curr_nok;
       $GLOBALS["array_data"][$key]["position"] = $curr_position;
-      $GLOBALS["array_data"][$key]["passport"] = $curr_passport;
+      $GLOBALS["array_data"][$key]["passport_photo"] = $curr_passport;
 
       $record_update = json_encode($GLOBALS["array_data"]);
       file_put_contents('employee_data.json', $record_update);
