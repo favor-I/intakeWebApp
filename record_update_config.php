@@ -18,7 +18,6 @@ if(isset($_POST["update"])){
 
   foreach($GLOBALS["array_data"] as $key => $value ) {
     if($key == $id) {
-      echo "yed";
       $GLOBALS["array_data"][$key]["id"] = $curr_id;
       $GLOBALS["array_data"][$key]["name"] = $curr_name;
       $GLOBALS["array_data"][$key]["mail"] = $curr_mail;
